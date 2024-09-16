@@ -69,6 +69,8 @@ function editMap(player) {
             worldSeeds.push(seed);
             item = seed.icon;
             player.inventory.seeds.pop();
+        }else{
+            item ="."
         }
         map = map.substring(0, player.pos) + item + map.substring(player.pos + 1, mapSize);
     } else if (map.charAt(player.pos) === ",") {
