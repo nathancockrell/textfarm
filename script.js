@@ -41,10 +41,8 @@ function movePlayer(direction) {
         if (player.y < 12) { player.y++ }
     } else if (direction === "left") {
         if (player.x > 0) { player.x-- }
-        player.icon = "ꟻ";
     } else if (direction === "right") {
         if (player.x < 37) { player.x++ }
-        player.icon = "F";
     }
 
     player.pos = xytoPos(player.x, player.y);
