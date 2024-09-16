@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text farm</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .controls { display: flex; justify-content: center; margin-top: 10px; }
+        .controls button { margin: 5px; }
+    </style>
+</head>
+<body style="display:flex;flex-direction: column;height:100vh;align-items: center; padding:0; margin:0">
+    <div id="notfications" style="width:310px; height:100px;border:1px solid black; margin:1rem;">No Notifications</div>
+    <textarea name="game" id="game" autofocus spellcheck="false" style="caret-color:transparent; padding:10px;width:310px; height:220px; background-color: black;color: white;"></textarea>
+    <textarea name="input" id="input" style="width:300px; height:30px;" placeholder="statements here"></textarea>
+
+    <div class="controls">
+        <button id="up">Up</button>
+        <button id="down">Down</button>
+        <button id="left">Left</button>
+        <button id="right">Right</button>
+        <button id="edit">Edit</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
