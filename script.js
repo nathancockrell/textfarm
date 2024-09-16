@@ -103,7 +103,7 @@ function handleKeyPress(e) {
         movePlayer("left");
     } else if (key === "d" || key === "ArrowRight") {
         movePlayer("right");
-    } else if (key === "f" || key ===",") {
+    } else if (key === "l" || key ===",") {
         editMap(player);
     }
     renderMap();
@@ -118,13 +118,13 @@ function handleButtonPress(direction) {
 
 game.addEventListener("keydown", handleKeyPress);
 
-document.getElementById("up").addEventListener("click", handleButtonPress("up"));
-document.getElementById("down").addEventListener("click", handleButtonPress("down"));
-document.getElementById("left").addEventListener("click", handleButtonPress("left"));
-document.getElementById("right").addEventListener("click", handleButtonPress("right"));
-document.getElementById("edit").addEventListener("click", () => {
-    editMap(player);
-    renderMap();
-});
+// document.getElementById("up").addEventListener("click", handleButtonPress("up"));
+// document.getElementById("down").addEventListener("click", handleButtonPress("down"));
+// document.getElementById("left").addEventListener("click", handleButtonPress("left"));
+// document.getElementById("right").addEventListener("click", handleButtonPress("right"));
+// document.getElementById("edit").addEventListener("click", () => {
+//     editMap(player);
+//     renderMap();
+// });
 
 renderMap();
